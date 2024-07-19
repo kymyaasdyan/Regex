@@ -1,0 +1,26 @@
+لاگ اول:
+- تاریخ و زمان: 2024/07/11 15:30:45
+- سطح: خطا (error)
+- شماره پردازش: 1234#1234
+- شماره رکورد: *56789
+- پیام: connect() failed (111: Connection refused) while connecting to upstream
+- مشخصات مشتری: 
+    - آدرس IP: 192.168.1.100
+    - درخواست: GET /api/data HTTP/1.1
+    - میزبان: example.com
+    - مرجع: https://example.com/
+- مشخصات سرور:
+    - upstream: http://127.0.0.1:8000/api/data
+    - میزبان: example.com
+
+لاگ دوم:
+- تاریخ و زمان: 2024/07/11 16:15:20
+- سطح: خطا (error)
+- شماره پردازش: 1234#1234
+- شماره رکورد: *67890
+- پیام: open() “/usr/share/nginx/html/not_found.html” failed (2: No such file or directory)
+- مشخصات مشتری:
+    - آدرس IP: 192.168.1.101
+    - درخواست: GET /nonexistent-page HTTP/1.1
+    - میزبان: example.com
+    - مرجع: https://example.com/
